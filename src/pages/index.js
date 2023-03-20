@@ -19,12 +19,7 @@ export default function Home() {
       </Head>
       <main className={outfit.className}>
         <div className={styles.qrComponent}>
-          <Image
-            className={styles.qrCode}
-            src={QrCode}
-            alt="QR Code"
-            priority
-          />
+          <Image className={styles.qrCode} src={QrCode} alt="QR Code" />
           <h1 className={styles.center}>
             Improve your front-end skills by building projects
           </h1>
