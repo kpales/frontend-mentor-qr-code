@@ -3,7 +3,10 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import Layout from "../components/layout";
 
+import { Outfit } from "next/font/google";
 import QrCode from "../../public/image-qr-code.png";
+
+const outfit = Outfit({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -14,7 +17,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
-      <main className={styles.main}>
+      <main className={outfit.className}>
         <div className={styles.qrComponent}>
           <Image
             className={styles.qrCode}
