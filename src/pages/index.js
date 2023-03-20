@@ -3,6 +3,8 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import Layout from "../components/layout";
 
+import QrCode from "../../public/image-qr-code.png";
+
 export default function Home() {
   return (
     <Layout>
@@ -15,11 +17,9 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.qrComponent}>
           <Image
-            className={styles.logo}
-            src="/image-qr-code.png"
+            className={styles.qrCode}
+            src={QrCode}
             alt="QR Code"
-            width={400}
-            height={400}
             priority
           />
           <h1 className={styles.center}>
@@ -27,7 +27,7 @@ export default function Home() {
           </h1>
           <p className={styles.center}>
             Scan the QR code to visit Frontend Mentor and take your coding
-            skills to next level
+            skills to the next level
           </p>
         </div>
       </main>

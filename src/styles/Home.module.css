@@ -3,6 +3,9 @@
     padding: 1.5rem;
     background-color: hsl(0, 0%, 100%);
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 h1.center{
     text-align: center;
@@ -13,7 +16,20 @@ p.center{
     padding: 0 5rem;
     color: hsl(220, 15%, 55%);
     font-weight: 400;
+    margin: 0;
 }
-.logo{
-    border-radius: 1rem
+.qrCode{
+    border-radius: 1rem;
+   width: 100%;
+   height: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+    h1.center{
+        font-size: 1.6rem;
+    }
+    p.center{
+        padding: 0 1.5rem;
+
+    }
+  }
